@@ -1,0 +1,24 @@
+{
+  "name": "tanon",
+  "version": "0.0.1",
+  "description": "front knowledge ",
+  "main": "false",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yvan2415/tanon.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "js"
+  ],
+  "author": "yvan2415",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yvan2415/tanon/issues"
+  },
+  "homepage": "https://github.com/Yvan2415/tanon#readme"
+}

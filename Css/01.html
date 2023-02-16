@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object-fill</title>
+</head>
+<body>
+  <div class="box">
+    <img src="../assets/images/hero.webp" alt="hero">
+    <img src="../assets/images/ez.webp" alt="ez">
+    <img src="../assets/images/poluo.webp" alt="poluo">
+  </div>
+</body>
+<style>
+  .box img{
+    /* 仅设置图片宽度, 三个图片不等高 */
+    width: 400px;
+    /* 设置高度, 图片会缩放, 失去比例 */
+    height: 200px;
+    /* 设置Object-fill, 图片按比例显示, 多余的部分裁剪 */
+    object-fit: none; 
+    /* 默认显示中间部分, 设置展示左上角 */
+    object-position: left top;
+    /* 设置过度时间 */
+    transition: 1s;
+  }
+  .box img:hover{
+    /* 设置展示的位置是右下 */
+    object-position: right bottom;
+  }
+
+  /* 
+    Object-fill: 
+    fill: 充满整个容器, 不保证比例; 默认
+    contain: 保持原有比例, 内容缩放
+    cover: 保持原有比例, 内容剪裁
+    none: 保持原来的长宽
+    scale-down: 保持原有尺寸, none 或 contain 中的一个相同, 取决于，取决于它们两个之间谁得到的对象尺寸会更小一些。
+  */
+</style>
+</html>

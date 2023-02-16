@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关键帧动画</title>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+<style>
+  body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .box{
+    width: 300px;
+    height: 300px;
+    border: 5px solid yellowgreen;
+    background-color: orange;
+    border-radius: 20px 40px 10px 50px;
+    /*
+      animation: 
+      animation-name: 关键帧名称
+      animation-duration: 所花费的时间
+      animation-timing-function: 速度曲线  https://www.w3school.com.cn/cssref/pr_animation-timing-function.asp
+      animation-delay: 动画之前的延迟 
+      animation-iteration-count: 播放的次数 infinite 无限
+      animation-direction: 是否轮流反向播放 normal/alternate
+
+      animation-fill-mode: 动画不播放时的样式
+      animation-play-state: 指定动画播放或暂停
+    */
+    animation: spin 2s linear 1s infinite alternate;
+  }
+
+  @keyframes spin {
+    0%{
+      width: 300px;
+      height: 300px;
+      transform: rotate(0);
+    }
+    100%{
+      width: 500px;
+      height: 500px;
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</html>

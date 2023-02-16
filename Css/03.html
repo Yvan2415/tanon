@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading</title>
+</head>
+<body>
+  <div class="box">
+    <div style="--i: 1">L</div>
+    <div style="--i: 2">o</div>
+    <div style="--i: 3">a</div>
+    <div style="--i: 4">d</div>
+    <div style="--i: 5">i</div>
+    <div style="--i: 6">n</div>
+    <div style="--i: 7">g</div>
+  </div>
+</body>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .box{
+    height: 100vh;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box div{
+    font-size: 36px;
+    color: chocolate;
+    animation: loading 0.63s ease infinite alternate;
+    animation-delay: calc(var(--i) * 0.09s);
+  }
+
+  @keyframes loading{
+    0%{
+      transform: translateY(0);
+      color: chocolate;
+    }
+    100%{
+      transform: translateY(-30%);
+      color: chartreuse;
+    }
+  }
+</style>
+</html>
