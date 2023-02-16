@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拟态</title>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bebebe;
+  }
+
+  .box{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    background: #bebebe;
+    /* 
+    box-shadow
+      h-shadow: 水平阴影的位置
+      v-shadow: 垂直阴影的位置
+      blur: 模糊距离
+      spread: 阴影的尺寸
+      color: 颜色
+      position: 不设置就是外阴影,设置就是内阴影 insert
+    */
+    box-shadow:  -20px -20px 60px #a2a2a2,
+                20px 20px 60px #dbdbdb;
+  }
+
+</style>
+</html>
